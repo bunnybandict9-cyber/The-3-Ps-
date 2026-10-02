@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>THE 3'Ps | PetPal Planner</title>
+  <meta name="description" content="Plan feeding, grooming and playing schedules for your pets.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="page-home">
+  <div id="site-nav"></div>
+
+  <main>
+    <!-- CAROUSEL -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/german.jpg" class="d-block w-100" alt="Very fearful German Shepard dog">
+          <div class="carousel-caption d-none d-md-block"><h2>GERMAN SHEPARD</h2><p>Intelligent, loyal and courageous, perfect for active families.</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/wp3492725.jpg" class="d-block w-100" alt="Ragdoll cat with blue eyes">
+          <div class="carousel-caption d-none d-md-block"><h2>RAGDOLL</h2><p>Known for their docile and affectionate nature.</p></div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/good.jpg" class="d-block w-100" alt="Golden Retriever dog">
+          <div class="carousel-caption d-none d-md-block"><h2>GOLDEN RETRIEVER</h2><p>Known for their friendly and intelligent nature.</p></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- INTRO -->
+    <section class="container text-center my-5">
+      <h1>Welcome to THE 3'Ps</h1>
+      <p class="lead mx-auto" style="max-width:700px">
+        PetPal Planner helps you organise <strong>Feeding</strong>, <strong>Grooming</strong> and
+        <strong>Playing</strong> routines for every pet in your family, all in one place.
+      </p>
+      <a href="pets.html" class="btn btn-accent btn-lg mt-2">Get Started</a>
+    </section>
+
+    <!-- THE 3 P's -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">The 3 P's</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card hover-lift h-100 text-center p-3"><div class="card-body">
+            <i class="bi bi-egg-fried p-icon"></i>
+            <h3>Feeding</h3>
+            <p>Set meal times and portions so your pet is always fed on schedule.</p>
+            <a href="feeding.html" class="btn btn-outline-accent">Plan Feeding</a>
+          </div></div>
+        </div>
+        <div class="col-md-4">
+          <div class="card hover-lift h-100 text-center p-3"><div class="card-body">
+            <i class="bi bi-scissors p-icon"></i>
+            <h3>Grooming</h3>
+            <p>Track brushing, baths, nail trims and teeth cleaning.</p>
+            <a href="grooming.html" class="btn btn-outline-accent">Plan Grooming</a>
+          </div></div>
+        </div>
+        <div class="col-md-4">
+          <div class="card hover-lift h-100 text-center p-3"><div class="card-body">
+            <i class="bi bi-balloon-heart p-icon"></i>
+            <h3>Playing</h3>
+            <p>Schedule walks, games and exercise to keep your pet happy.</p>
+            <a href="playing.html" class="btn btn-outline-accent">Plan Playtime</a>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">How It Works</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-4"><i class="bi bi-1-circle-fill p-icon"></i><h3>Add Your Pet</h3><p>Create a profile for each pet.</p></div>
+        <div class="col-md-4"><i class="bi bi-2-circle-fill p-icon"></i><h3>Set Schedules</h3><p>Pick days and times for each care task.</p></div>
+        <div class="col-md-4"><i class="bi bi-3-circle-fill p-icon"></i><h3>Stay On Track</h3><p>Check off tasks on your daily dashboard.</p></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="container my-5" style="max-width:800px">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <div class="accordion" id="faq">
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">Is PetPal Planner free?</button></h2>
+          <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faq"><div class="accordion-body">Yes, it is completely free to use.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">Where is my data stored?</button></h2>
+          <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Your data is saved in your own browser on this device. Clearing your browser data will remove it.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">Does it replace my vet's advice?</button></h2>
+          <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">No. Tips on this site are general. Always follow your veterinarian's guidance for your pet.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="container my-5">
+      <div class="card text-center p-4">
+        <h2>Ready to plan a happier day for your pet?</h2>
+        <p>It takes less than two minutes to get set up.</p>
+        <div><a href="pets.html" class="btn btn-accent btn-lg">Add My First Pet</a></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

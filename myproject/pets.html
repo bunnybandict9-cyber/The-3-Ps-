@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Pets | THE 3'Ps</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="page-pets">
+  <div id="site-nav"></div>
+
+  <main class="container my-5">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-4">
+      <div>
+        <h1 class="mb-1">My Pets</h1>
+        <p class="mb-0">Add each pet once, then build their schedules.</p>
+      </div>
+      <button class="btn btn-accent" id="addPetBtn"><i class="bi bi-plus-circle"></i> Add Pet</button>
+    </div>
+
+    <div class="row g-4" id="petList"></div>
+
+    <!-- Pet modal -->
+    <div class="modal fade" id="petModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog"><div class="modal-content">
+        <form id="petForm" novalidate>
+          <div class="modal-header">
+            <h5 class="modal-title" id="petModalTitle">Add Pet</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <input type="hidden" name="petId">
+            <div class="mb-3">
+              <label class="form-label" for="petName">Name</label>
+              <input class="form-control" id="petName" name="petName" maxlength="40" required>
+              <div class="invalid-feedback">Please enter your pet's name.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="species">Species</label>
+              <select class="form-select" id="species" name="species" required>
+                <option>Dog</option><option>Cat</option><option>Bird</option><option>Rabbit</option>
+                <option>Fish</option><option>Hamster</option><option>Other</option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="col-8 mb-3">
+                <label class="form-label" for="breed">Breed</label>
+                <input class="form-control" id="breed" name="breed" maxlength="40">
+              </div>
+              <div class="col-4 mb-3">
+                <label class="form-label" for="age">Age (yrs)</label>
+                <input type="number" min="0" max="50" step="0.5" class="form-control" id="age" name="age">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="notes">Notes</label>
+              <textarea class="form-control" id="notes" name="notes" rows="2" placeholder="Allergies, favourite toy..."></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-accent">Save</button>
+          </div>
+        </form>
+      </div></div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pets.js"></script>
+</body>
+</html>
